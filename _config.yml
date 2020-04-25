@@ -1,0 +1,18 @@
+title: Nick's Wiki
+description: The personal wiki of Nick Belzer.
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - src
+  - tailwind.config.js
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
