@@ -6,4 +6,3 @@ assets/css
 node_modules
 .bundle/
 vendor/
-package-lock.json
