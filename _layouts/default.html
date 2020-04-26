@@ -2,9 +2,12 @@
 <html class="no-js" lang="en-US">
 {% include header.html %}
 <body>
-  <main class="flex items-center justify-center w-full">
-    {{ content }}
-  </main>
+  <div class="flex flex-col sm:flex-row">
+    {% include responsive-navigation.html %}
+    <main class="flex items-center justify-center w-full">
+      {{ content }}
+    </main>
+  </div>
   {% include scripts.html %}
 </body>
 </html>
