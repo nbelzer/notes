@@ -1,6 +1,16 @@
 title: Nick's Wiki
 description: The personal wiki of Nick Belzer.
 
+defaults:
+  - scope:
+      path: ""
+    values:
+       layout: "default"
+  - scope:
+      path: "topics"
+    values:
+      layout: "topic"
+
 exclude:
   - Gemfile
   - Gemfile.lock
