@@ -6,8 +6,8 @@
 </div>
 
 <!-- Mobile Navigation -->
-<div class="sm:hidden" x-data="{ open: false }">
-    <div class="flex justify-end pt-8 pr-8 pb-4">
+<div class="sm:hidden relative" x-data="{ open: false }">
+    <div class="absolute bg-white p-2 rounded-md right-0 top-0 mt-6 mr-6">
         <button @click="open = true">
             <i class="far fa-bars fa-2x text-gray-600"></i>
         </button>
