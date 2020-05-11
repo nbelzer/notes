@@ -1,13 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
 {% include header.html %}
-<body>
-  <div class="flex flex-col sm:flex-row">
+<body class="column-page">
+  <div>
     {% include responsive-navigation.html %}
-    <main class="flex flex-col items-center w-full">
+    <main class="flex flex-col">
       {{ content }}
     </main>
   </div>
+  {% include footer.html %}
   {% include scripts.html %}
 </body>
 </html>

@@ -1,8 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 @import 'tailwind.css';
 @import 'articles.css';
-@import 'navigation.css';
+
+@media (max-width: 640px) {
+    body {
+        /* Set font-size for some phones. */
+        font-size: 16px;
+    }
+}
 
 body {
     font-family: 'Noto Serif', serif;
+}
+
+.column-page {
+    max-width: 600px;
+    @apply mx-auto;
+    @apply px-4;
+}
+
+.block-link {
+    @apply shadow-sm;
+    @apply w-full;
+    @apply rounded-md;
+    @apply border;
+    @apply border-gray-100;
+    @apply px-4;
+    @apply py-2; 
+    @apply flex;
+    @apply items-center;
+}
+
+.block-link:hover {
+    @apply border-orange-300;
+}
+
+
+a {
+    @apply text-orange-700;
+}
+
+a:hover {
+    @apply text-orange-600;
 }

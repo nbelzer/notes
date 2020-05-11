@@ -1,0 +1,16 @@
+{% assign subpage = site.pages | where: "path", include.page | first %}
+<div>
+  <a href="{{ subpage.url }}">
+    <div class="block-link mb-4">
+      <i class="{{ include.class | default: "text-gray-400" }} fad fa-file-alt fa-2x"></i>
+      <div class="ml-4">
+        <div class="text-md font-bold text-gray-800">
+          {{ subpage.title }}
+        </div>
+        <div class="text-sm text-gray-500">
+          {{ subpage.content | strip_html | truncate: 64 }}
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

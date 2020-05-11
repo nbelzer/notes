@@ -1,31 +1,6 @@
-<!-- Desktop Navigation -->
-<div class="hidden sm:block sm:w-1/3 navigation-bar">
-    <nav class="h-screen bg-gray-100 px-6 py-12">
-        {% include navigation.html %}
-    </nav>
-</div>
-
-<!-- Mobile Navigation -->
-<div class="sm:hidden relative" x-data="{ open: false }">
-    <div class="absolute bg-white p-2 rounded-md right-0 top-0 mt-6 mr-6">
-        <button @click="open = true">
-            <i class="far fa-bars fa-2x text-gray-600"></i>
-        </button>
-    </div>
-    <nav class="h-screen fixed inset-0 bg-gray-100 px-4 py-4 z-50"
-         x-show="open"
-         @click.away="open = false"
-         x-transition:enter="transition ease-out duration-150"
-         x-transition:enter-start="opacity-0 transform -translate-x-16"
-         x-transition:enter-end="opacity-100 transform"
-         x-transition:leave="transition ease-in duration-150"
-         x-transition:leave-start="opacity-100 transform"
-         x-transition:leave-end="opacity-0 transform -translate-x-16">
-        <div class="flex justify-end px-4 py-4">
-            <button @click="open = false">
-                <i class="far fa-times fa-2x text-gray-600" style="margin: 0 3.5px;"></i>
-            </button>
-        </div>
+<!-- Desktop Navigation, might later include specific nav for mobile. -->
+<div class="navigation-bar">
+    <nav>
         {% include navigation.html %}
     </nav>
 </div>

@@ -1,0 +1,23 @@
+---
+layout: article
+---
+{% assign mainpage = site.posts | where: "path", page.main | first %}
+<div class="mb-6">
+    <div class="mt-4 mb-6">
+        {% include back-to-mainpage.html title=mainpage.title url=mainpage.url %}
+    </div>
+    <h3 class="text-gray-400 mb-0">{{ mainpage.title }}/</h3>
+    <h1 class="article-title mt-0">{{ page.title }}</h1>
+    <div class="mt-4">
+        {% include author_small.html %}
+    </div>
+</div>
+
+{{ content }}
+
+{% assign no_words = content | number_of_words %}
+{% if no_words > 350 %}
+    <div class="mt-6">
+        {% include back-to-mainpage.html title=mainpage.title url=mainpage.url %}
+    </div>
+{% endif %}

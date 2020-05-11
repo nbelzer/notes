@@ -1,10 +1,10 @@
-<h2 align="center">Nick's Wiki</h2>
+<h2 align="center">Nick's Notes</h2>
 
-[![Website Status](https://img.shields.io/website?down_color=critical&down_message=down&up_color=success&up_message=online&url=https%3A%2F%2Fwiki.nickbelzer.me)](https://wiki.nickbelzer.me)
+[![Website Status](https://img.shields.io/website?down_color=critical&down_message=down&up_color=success&up_message=online&url=https%3A%2F%2Fnotes.nickbelzer.me)](https://notes.nickbelzer.me)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
-This repository contains the source code for the wiki hosted at [wiki.nickbelzer.me](https://wiki.nickbelzer.me).
+This repository contains the source code for the knowledge repository hosted at [notes.nickbelzer.me](https://notes.nickbelzer.me).
 
 ## Getting started
 

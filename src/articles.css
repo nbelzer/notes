@@ -1,3 +1,7 @@
+.article {
+    @apply leading-relaxed;
+}
+
 h1 {
     @apply text-2xl;
 }
@@ -21,7 +25,7 @@ h1.article-title {
 }
 
 p {
-    @apply mb-3;
+    @apply mb-4;
 }
 
 .footnotes {
@@ -31,4 +35,31 @@ p {
 }
 .footnotes p {
     @apply mb-1;
+}
+
+hr {
+    @apply my-6;
+    @apply mx-8;
+    @apply border-gray-200;
+}
+
+kbd, code {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    @apply px-1;
+    @apply rounded-sm;
+    @apply shadow-sm;
+    @apply border;
+    @apply bg-gray-100;
+    @apply border-gray-200;
+    @apply text-gray-600;
+}
+
+li {
+    @apply ml-8;
+    @apply list-disc;
+}
+
+ul {
+    @apply mb-4;
 }

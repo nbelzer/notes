@@ -1,0 +1,11 @@
+{% assign author = site.data.authors[include.author] %}
+{% if include.author == nil %}
+  {% assign author = site.data.authors[page.author] %}
+{% endif %}
+<div class="flex flex-row items-center">
+  <img src="{{ site.baseurl }}{{ author.profile_img }}"
+       class="rounded-full h-6 w-6">
+  <div class="ml-2">
+    <div class="text-gray-600">{{ author.name }}</div>
+  </div>
+</div>

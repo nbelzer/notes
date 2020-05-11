@@ -1,10 +1,5 @@
-<div class="mb-8">
-    {% include title.html %}
+<div class="w-full">
+    <a href="/">
+        {% include title.html %}
+    </a>
 </div>
-{% for topic in site.data.navbar %}
-<a href="{{topic.url}}">
-    <div class="{% if page.url == topic.url %}font-semibold{% endif %} mb-1 px-2 py-1 w-full hover:font-semibold">
-        {{topic.name}}
-    </div>
-</a>
-{% endfor %}
