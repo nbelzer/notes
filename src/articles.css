@@ -47,8 +47,7 @@ kbd, code {
     padding-top: 2px;
     padding-bottom: 2px;
     @apply px-1;
-    @apply rounded-sm;
-    @apply shadow-sm;
+    @apply rounded-md;
     @apply border;
     @apply bg-gray-100;
     @apply border-gray-200;
@@ -62,4 +61,23 @@ li {
 
 ul {
     @apply mb-4;
+}
+
+pre.highlight {
+    @apply my-2;
+    @apply px-2;
+    @apply py-2;
+    @apply rounded-md;
+    @apply border;
+    @apply bg-gray-50;
+    @apply border-gray-200;
+    @apply text-gray-600;
+    @apply overflow-x-scroll;
+}
+
+pre.highlight code {
+    @apply bg-transparent;
+    @apply border-none;
+    @apply shadow-none;
+    @apply p-0;
 }
