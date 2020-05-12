@@ -2,6 +2,9 @@
 layout: article
 ---
 {% assign mainpage = site.posts | where: "path", page.main | first %}
+{% if mainpage == nil %}
+    {% assign mainpage = site.pages | where: "path", page.main | first %}
+{% endif %}
 <div class="mb-6">
     <div class="mt-4 mb-6">
         {% include back-to-mainpage.html title=mainpage.title url=mainpage.url %}
