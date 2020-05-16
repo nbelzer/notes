@@ -6,5 +6,13 @@ layout: article
     <div class="mt-4">
         {% include author.html %}
     </div>
+    {% if page.draft %}
+    <div class="w-full text-sm text-gray-600 border border-gray-200 bg-gray-100 rounded-md px-4 py-2 mt-6 flex items-center">
+      <i class="fad fa-exclamation-triangle fa-lg mr-4"></i>
+      <div>
+        This page is marked as draft.
+      </div>
+    </div>
+    {% endif %}
 </div>
 {{ content }}
