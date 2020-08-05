@@ -3,6 +3,7 @@ title: Building my personal knowledge repository
 layout: topic
 author: nbelzer
 tags: []
+last_modified: 2020-05-12 12:00:00 +0200
 ---
 For a while now I've looked up to personal knowledge repositories like the one from [Nikita Voloboev](https://wiki.nikitavoloboev.xyz). Using [Notion](https://www.notion.so) I've created my own personal repository of knowledge spanning many aspects of my life: from my work with different software libraries or programming languages to strategies for games and general thoughts about life.
 

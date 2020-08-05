@@ -16,7 +16,7 @@ layout: default
         <div class="my-2 flex flex-row items-baseline">
             <h2 class="my-0 text-lg mr-2">{{ post.title }}</h2>
             <div class="text-sm text-gray-400">
-                {{ post.date | date: "%-d %B %Y" }}
+                {{ post.last_modified | date: "%-d %B %Y" }}
             </div>
 
         </div>
