@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>N.otes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Git Tips &amp; Tricks | N.otes</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Git Tips &amp; Tricks" />
+<meta name="author" content="Nick Belzer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Nick Belzer’s Notes." />
+<meta property="og:description" content="Nick Belzer’s Notes." />
+<meta property="og:site_name" content="N.otes" />
+<script type="application/ld+json">
+{"@type":"WebPage","description":"Nick Belzer’s Notes.","author":{"@type":"Person","name":"Nick Belzer"},"headline":"Git Tips &amp; Tricks","url":"/topics/using-git/01-git-tips-and-tricks.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body class="column-page">
+  <div>
+    <!-- Desktop Navigation, might later include specific nav for mobile. -->
+<div class="navigation-bar">
+    <nav>
+        <div class="w-full">
+    <a href="/">
+        <h1 class="text-gray-800 text-2xl font-semibold">
+    <i class="fad fa-books"></i>
+    N.otes
+</h1>
+
+    </a>
+</div>
+    </nav>
+</div>
+    <main class="flex flex-col">
+      <div class="article text-gray-800 w-full">
+    <div class="w-full">
+        
+
+<div class="mb-6">
+    <div class="mt-4 mb-6">
+        <a href="/topics/2020/08/04/using-git.html">
+  <div class="block-link text-gray-400">
+      <i class="fas fa-long-arrow-left"></i>
+      <div class="ml-2">
+          Back to: <b>Using Git</b>
+      </div>
+  </div>
+</a>
+    </div>
+    <h3 class="text-gray-400 mb-0">Using Git/</h3>
+    <h1 class="article-title mt-0">Git Tips & Tricks</h1>
+    <div class="mt-4">
+        
+
+<div class="flex flex-row items-center">
+  <img src="/assets/img/nbelzer-profile-square-256.png"
+       class="rounded-full h-6 w-6">
+  <div class="ml-2">
+    <div class="text-gray-600">Nick Belzer</div>
+  </div>
+</div>
+    </div>
+</div>
+
+<p>This page contains a collection of small tips &amp; tricks based on situations I encountered.</p>
+
+<h1 id="ignoring-files-globally">Ignoring files globally.</h1>
+
+<p>MacOS stores custom attributes for a folder inside it through a <code class="highlighter-rouge">.DS_Store</code> file. This includes personal attributes and therefore do not need to be shared in most git projects. As this is OS specific I include it in my global <code class="highlighter-rouge">.gitignore</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Setup your global .gitignore</span>
+<span class="nb">touch</span> ~/.gitignore
+
+<span class="c"># Make sure we ignore any .DS_Store file in our git projects.</span>
+<span class="c"># This can also be done using your editor of choice.</span>
+<span class="nb">echo</span> <span class="s1">'**/.DS_Store'</span> <span class="o">&gt;&gt;</span> ~/.gitignore
+
+<span class="c"># Tell git about your global .gitignore file.</span>
+git config <span class="nt">--global</span> core.excludesfile <span class="s1">'~/.gitignore'</span>
+</code></pre></div></div>
+
+
+
+
+    </div>
+</div>
+    </main>
+  </div>
+  
+  <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> -->
+<script src="https://kit.fontawesome.com/1fa617da52.js" crossorigin="anonymous" defer></script>
+</body>
+</html>
