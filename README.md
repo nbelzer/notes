@@ -12,11 +12,15 @@ These instructions should get you started running a local copy on your own machi
 
 
 ## Prerequisites
+* [Ruby](https://www.ruby-lang.org/en/)
+  - You can install it through brew (`brew install ruby`) on MacOS.
 * [Bundler](http://bundler.io/)
 * [Jekyll](https://jekyllrb.com/)
+  - You can install both through: `gem install bundler jekyll`.
 * [Node.js](https://nodejs.org/en/)
+  - Personally I manage my node versions through [n](https://github.com/tj/n). Can be installed through brew (`brew install n`) on MacOS.
 * [npm](https://www.npmjs.com/)
-* [Ruby](https://www.ruby-lang.org/en/)
+
 
 ## Installation
 * `bundle install` to install Ruby gems
