@@ -70,9 +70,24 @@
 
 <p>This page contains a collection of small tips &amp; tricks based on situations I encountered.</p>
 
+<h1 id="user-configuration">User Configuration</h1>
+
+<p>After installing git you should always perform these steps to properly configure the tool.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Set your identity</span>
+git config <span class="nt">--global</span> user.name <span class="s2">"John Doe"</span>
+git config <span class="nt">--global</span> user.email johndoe@example.com
+
+<span class="c"># Set your preferred editor</span>
+git config <span class="nt">--globar</span> core.editor emacs
+
+<span class="c"># Review your settings</span>
+git config <span class="nt">--list</span>
+</code></pre></div></div>
+
 <h1 id="ignoring-files-globally">Ignoring files globally.</h1>
 
-<p>MacOS stores custom attributes for a folder inside it through a <code class="highlighter-rouge">.DS_Store</code> file. This includes personal attributes and therefore do not need to be shared in most git projects. As this is OS specific I include it in my global <code class="highlighter-rouge">.gitignore</code>.</p>
+<p>MacOS stores custom attributes for a folder inside it through a <code class="highlighter-rouge">.DS_Store</code> file. This includes personal attributes and therefore does not need to be shared in most git projects. As this is OS specific I include it in my global <code class="highlighter-rouge">.gitignore</code> instead of placing it in every <code class="highlighter-rouge">.gitignore</code> for each project.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Setup your global .gitignore</span>
 <span class="nb">touch</span> ~/.gitignore
