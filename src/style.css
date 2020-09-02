@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,600;1,400&display=swap');
 @import 'tailwind.css';
 @import 'articles.css';
 
@@ -10,13 +10,19 @@
 }
 
 body {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+    @apply text-gray-800;
 }
 
 .column-page {
-    max-width: 600px;
+    max-width: 40em;
     @apply mx-auto;
     @apply px-4;
+}
+
+.column-page p {
+    line-height: 1.8em;
 }
 
 .block-link {
@@ -32,14 +38,14 @@ body {
 }
 
 .block-link:hover {
-    @apply border-orange-300;
+    @apply border-blue-300;
 }
 
 
 a {
-    @apply text-orange-700;
+    @apply text-blue-700;
 }
 
 a:hover {
-    @apply text-orange-600;
+    @apply text-blue-500;
 }
