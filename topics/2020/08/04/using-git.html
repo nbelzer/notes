@@ -44,24 +44,19 @@
     <div class="w-full">
         <div class="mb-6">
     <h1 class="article-title">Using Git</h1>
-    <div class="mt-4">
-        
+    
 
-<div class="flex flex-row items-center py-2 border-t border-b border-gray-200">
-  <img src="/assets/img/nbelzer-profile-square-256.png"
-       class="rounded-full h-12 w-12">
-  <div class="ml-3">
-    <div class="text-gray-600">Nick Belzer</div>
-    <div class="text-xs text-gray-400">Last Modified: 4 August 2020</div>
-  </div>
+
+<div class="text-sm text-gray-400 py-2">
+  <b>Modified</b>: 4 August 2020
 </div>
 
-    </div>
+
     
 </div>
 <p>The ability to use version control properly is a skill every software developer needs. Personally I have only used <a href="https://git-scm.com">Git</a>.</p>
 
-<h1 id="getting-started">Getting Started</h1>
+<h2 id="getting-started">Getting Started</h2>
 
 <p>There are some great resources available on the web to get started with Git:</p>
 <ul>
@@ -70,33 +65,12 @@
   <li><a href="https://git-scm.com/book/en/v2">Pro Git book</a> – For both beginners and advanced users.</li>
 </ul>
 
-<div>
-  <a href="/topics/using-git/01-git-tips-and-tricks.html">
-    <div class="block-link mb-4">
-      <i class="text-purple-400 fad fa-book-spells fa-2x"></i>
-      <div class="ml-4">
-        <div class="text-md font-bold text-gray-800">
-          Git Tips &amp; Tricks
-        </div>
-        <div class="text-sm text-gray-500">
-          This page contains a collection of small tips &amp; tricks based ...
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-
 <h2 id="interfacing-with-git">Interfacing with git</h2>
 <p>By default you can interface with Git through the command line, which is how I started out using Git. I learned that there are several visual interfaces available but they never allowed me to do what I wanted as quickly as I could using the cli (with some exceptions). This might have been a result of learning to use the cli first though.</p>
 
 <p>If you are interested in a visual interface for git take a look at your preferred editor as it might already have some sort of interface for Version Control. If it doesn’t take a look <a href="https://git-scm.com/downloads/guis/">here</a> for a list of GUI’s.</p>
 
-<figure class="image py-3">
-  <img class="rounded-lg shadow-sm border border-gray-100" src="/topics/using-git/img/magit-screenshot.png" alt="Magit open for this repository" />
-  <figcaption class="text-sm pt-3 text-gray-500 text-center">
-    Magit open for this repository
-  </figcaption>
-</figure>
+<p><img src="/assets/img/magit-screenshot.png" alt="Magit open for this repository" /></p>
 
 <p>Since the beginning of this year (2020) I’ve started using <a href="http://www.gnu.org/software/emacs/">Emacs</a> which allows you to install an awesome package named <a href="https://magit.vc">Magit</a>. This package allowed me to use git:</p>
 <ul>
@@ -106,6 +80,38 @@
 </ul>
 
 <p>If you are using Emacs I highly recommend you to check this package out.</p>
+
+<h2 id="tips--tricks">Tips &amp; Tricks</h2>
+
+<h3 id="user-configuration">User Configuration</h3>
+
+<p>After installing git you should always perform these steps to properly configure the tool.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Set your identity</span>
+git config <span class="nt">--global</span> user.name <span class="s2">"John Doe"</span>
+git config <span class="nt">--global</span> user.email johndoe@example.com
+
+<span class="c"># Set your preferred editor</span>
+git config <span class="nt">--globar</span> core.editor emacs
+
+<span class="c"># Review your settings</span>
+git config <span class="nt">--list</span>
+</code></pre></div></div>
+
+<h3 id="ignoring-files-globally">Ignoring files globally.</h3>
+
+<p>MacOS stores custom attributes for a folder inside it through a <code class="highlighter-rouge">.DS_Store</code> file. This includes personal attributes and therefore does not need to be shared in most git projects. As this is OS specific I include it in my global <code class="highlighter-rouge">.gitignore</code> instead of placing it in every <code class="highlighter-rouge">.gitignore</code> for each project.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Setup your global .gitignore</span>
+<span class="nb">touch</span> ~/.gitignore
+
+<span class="c"># Make sure we ignore any .DS_Store file in our git projects.</span>
+<span class="c"># This can also be done using your editor of choice.</span>
+<span class="nb">echo</span> <span class="s1">'**/.DS_Store'</span> <span class="o">&gt;&gt;</span> ~/.gitignore
+
+<span class="c"># Tell git about your global .gitignore file.</span>
+git config <span class="nt">--global</span> core.excludesfile <span class="s1">'~/.gitignore'</span>
+</code></pre></div></div>
 
 
 
