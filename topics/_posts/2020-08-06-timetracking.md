@@ -15,7 +15,7 @@ Time Tracking has become quite a large aspect of my life. In my current setup I 
 3. **A bit of focus and motivation** -- When starting one of my timers I use this process as a sort of reset for my brain. When the timer starts I should be doing the work.
 
 
-# My current setup
+## My current setup
 
 My current setup includes [Toggl](https://toggl.com) as a backbone. I use my phone as the primary interface to this service through  multiple shortcuts (from the Shortcuts app). These shortcuts ask one simple question: "What are you working on?" while presenting me with a list of predefined projects. This allows me to quickly start and stop timers.
 
@@ -36,7 +36,7 @@ To make sure that the tracked time means something I only track time well spent.
 
 Since iOS 14 came out in beta I have changed my setup slightly (as it previously relied on an app named [Timery](https://timeryapp.com) whose widget no longer works in iOS 14 (at least for the time being)). Since I was interested in Swift and SwiftUI I took the chance to develop my own app with widgets that I'd like to see. So far I've created two widgets that show the current (or last) running timer and a progress indicator to quickly see the amount of time tracked that day (towards my set goal). See the screenshot below:
 
-{% include figure.html url="/topics/time-tracking/img/time-tracking-setup-ios-14.jpg" description="My current iOS 14 time tracking setup." %}
+![My current iOS 14 Time tracking setup](/assets/img/time-tracking-setup-ios-14.jpg)
 
 So far I've enjoyed working on this app and I'll likely continue, perhaps one day publishing it on the App Store. For now I'm working on some simple graphs that can visualise time spent over a given period of time for a selection of projects. This is something I usually do during the academic year or at the end of a project. _I will update this page once I got that working_.
 
@@ -54,7 +54,7 @@ While I've tried to track almost all activities (from travelling to studying to 
 This structure directly applies to my setup in Toggl where I have set up a project for each category and use tags to distinguish between the projects in these categories. Each project is colour coded such that the project of a specific timer is easy to recognise (see the current iOS 14 setup above).
 
 
-# Links
+## Links
 
 - [Cortex (podcast)](https://www.relay.fm/cortex) -- Got me started with time tracking.
 - [r/cortex](https://reddit.com/r/cortex) -- Has a lot of posts helping out people starting to track their time.
