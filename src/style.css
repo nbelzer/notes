@@ -1,31 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;1,400&display=swap');
 @import 'tailwind.css';
 @import 'articles.css';
 
 @media (max-width: 640px) {
     body {
         /* Set font-size for some phones. */
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
 body {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 18px;
+    font-weight: 300;
     @apply text-gray-800;
 }
 
 .column-page {
-    max-width: 40em;
+    max-width: 38em;
     @apply mx-auto;
     @apply px-4;
 }
 
 .column-page p {
-    line-height: 1.8em;
+    line-height: 1.7em;
 }
 
-.block-link {
+/* .block-link {
     @apply shadow-sm;
     @apply w-full;
     @apply rounded-md;
@@ -39,7 +40,7 @@ body {
 
 .block-link:hover {
     @apply border-blue-300;
-}
+} */
 
 
 a {
