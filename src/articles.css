@@ -56,13 +56,13 @@ hr {
 }
 
 kbd, code {
+    font-size: 0.85em;
     padding-top: 2px;
     padding-bottom: 2px;
     @apply px-1;
     @apply rounded-md;
-    @apply border;
-    @apply bg-gray-100;
-    @apply border-gray-200;
+    @apply bg-gray-50;
+    @apply border border-gray-200;
     @apply text-gray-600;
 }
 
@@ -75,21 +75,29 @@ ul {
     @apply mb-4;
 }
 
-pre.highlight {
-    @apply my-2;
-    @apply px-2;
+pre.highlight, figure.highlight {
+    line-height: 1.25em;
+    
+    @apply mt-2 mb-4;
+    @apply px-4;
     @apply py-2;
     @apply rounded-md;
-    @apply border;
     @apply bg-gray-50;
+    @apply border border-gray-200;
     @apply border-gray-200;
     @apply text-gray-600;
     @apply overflow-x-scroll;
 }
 
-pre.highlight code {
+pre.highlight code, figure.highlight code {
     @apply bg-transparent;
     @apply border-none;
     @apply shadow-none;
     @apply p-0;
+}
+
+figure.highlight pre.lineno {
+    @apply mr-4;
+    @apply text-right;
+    @apply text-gray-400;
 }

@@ -11,6 +11,8 @@ defaults:
     values:
       layout: "topic"
 
+highlighter: rouge
+
 exclude:
   - Gemfile
   - Gemfile.lock
