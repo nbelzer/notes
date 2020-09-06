@@ -14,7 +14,7 @@ Over the last two months I have been trying to find a way to start documenting s
 
 ## The Why
 
-The basic idea behind having your own personal repository of knowledge is to provide you with a space where you can store information for your future self. You can't store everything in your brain (or at least I can't), your brain is prime real estate, it should be occupied with the memories[^1] you need the most (a bit like [memory caching](https://en.wikipedia.org/wiki/Cache_(computing))). Everything that doesn't have a place in the brain goes to the knowledge repository where it can be retrieved by your future self.
+The basic idea behind having your own personal repository of knowledge is to provide you with a space where you can store information for your future self. You can't store everything in your brain (or at least I can't), your brain is prime real estate, it should be occupied with the memories you need the most (a bit like [memory caching](https://en.wikipedia.org/wiki/Cache_(computing))). Everything that doesn't have a place in the brain goes to the knowledge repository where it can be retrieved by your future self.
 
 A simple example would be _re-arranging menu bar items on MacOS_: Hold down <kbd>⌘</kbd> while dragging items on the menu bar. This simple action can easily be forgotten, especially since it is not of importance in your daily life. When you need it you either have to rediscover the correct actions or search the web. With a knowledge repository you might have written down the steps and would have been able to quickly retrieve them, together with notes or relevant links. 
 
