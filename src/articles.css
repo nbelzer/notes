@@ -1,4 +1,4 @@
-.article {
+article {
     @apply leading-relaxed;
 }
 
@@ -66,12 +66,12 @@ kbd, code {
     @apply text-gray-600;
 }
 
-li {
+article li {
     @apply ml-8;
     @apply list-disc;
 }
 
-ul {
+article ul {
     @apply mb-4;
 }
 
