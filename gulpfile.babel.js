@@ -1,4 +1,3 @@
-import purgecss from "@fullhuman/postcss-purgecss";
 import autoprefixer from "autoprefixer";
 import browserSync from "browser-sync";
 import spawn from "cross-spawn";
@@ -23,9 +22,9 @@ task("buildJekyll", () => {
 
   const args = ["exec", jekyll, "build"];
 
-  if (isDevelopmentBuild) {
-    args.push("--incremental");
-  }
+  // if (isDevelopmentBuild) {
+  //   args.push("--incremental");
+  // }
 
   return spawn("bundle", args, { stdio: "inherit" });
 });
@@ -38,17 +37,7 @@ task("processStyles", () => {
       postcss([
         atimport(),
         tailwindcss(TAILWIND_CONFIG),
-        ...(!isDevelopmentBuild
-          ? [
-              purgecss({
-                content: [`${SITE_ROOT}/**/*.html`],
-                defaultExtractor: (content) =>
-                  content.match(/[\w-/:]+(?<!:)/g) || [],
-              }),
-              autoprefixer(),
-              cssnano(),
-            ]
-          : []),
+        ...(isDevelopmentBuild ? [] : [autoprefixer(), cssnano()]),
       ])
     )
     .pipe(dest(POST_BUILD_STYLESHEET));
@@ -57,8 +46,8 @@ task("processStyles", () => {
 task("startServer", () => {
   browserSync.init({
     files: [SITE_ROOT + "/**"],
-    open: "0.0.0.0",
-    port: 8080,
+    open: "local",
+    port: 4000,
     server: {
       baseDir: SITE_ROOT,
       serveStaticOptions: {
