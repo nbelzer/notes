@@ -1,5 +1,6 @@
 ---
 title: Building my personal knowledge repository
+subtitle: How I built this website.
 layout: topic
 author: nbelzer
 tags: []

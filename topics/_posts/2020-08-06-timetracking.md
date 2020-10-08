@@ -1,6 +1,7 @@
 ---
 layout: topic
 title: Time Tracking
+subtitle: Explaining my time tracking setup.
 author: nbelzer
 tags: []
 last_modified: 2020-08-06 19:48:00 +0200

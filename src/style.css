@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     @apply text-gray-800;
 }

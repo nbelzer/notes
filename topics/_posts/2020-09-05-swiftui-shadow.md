@@ -1,5 +1,6 @@
 ---
 title: SwiftUI Styles using Viewbuilders
+subtitle: How to apply preset styles in SwiftUI using Viewbuilders.
 layout: topic
 author: nbelzer
 tags: SwiftUI

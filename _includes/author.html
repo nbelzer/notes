@@ -3,7 +3,7 @@
   {% assign author = site.data.authors[page.author] %}
 {% endif %}
 
-<div class="text-sm text-gray-400 py-2">
-  <b>Modified</b>: {{ page.last_modified | date: "%-d %B %Y" }}
+<div class="text-sm text-gray-400 py-2 font-bold">
+  {{ page.last_modified | date_to_string: "ordinal", "US"  }}
 </div>
 
