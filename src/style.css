@@ -46,8 +46,15 @@ body {
 
 a {
     @apply text-blue-700;
+    @apply border-b;
+    @apply border-blue-700;
 }
 
 a:hover {
     @apply text-blue-500;
+}
+
+a:visited {
+    @apply text-indigo-700;
+    @apply border-indigo-700;
 }

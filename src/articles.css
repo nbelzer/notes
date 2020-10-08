@@ -1,5 +1,5 @@
 article {
-    @apply leading-relaxed;
+    @apply leading-snug;
 }
 
 h1, h2, h3 {
@@ -35,6 +35,11 @@ p {
     @apply mb-4;
 }
 
+article b,
+article strong {
+    @apply font-bold;
+}
+
 img {
     @apply my-4;
     @apply rounded-lg;
@@ -68,11 +73,13 @@ kbd, code {
 
 article li {
     @apply ml-8;
+    @apply mb-2;
     @apply list-disc;
 }
 
 article ul {
-    @apply mb-4;
+    position: relative;
+    @apply my-2;
 }
 
 pre.highlight, figure.highlight {

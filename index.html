@@ -19,11 +19,11 @@ layout: default
                         {{ currentdate }}
                     </h2>
                 </section>
-                <ul class="list-none border border-solid border-gray-200 rounded-md -mx-4 divide-y divide-gray-200 mb-6">
+                <ul class="list-none border border-solid border-gray-200 rounded-md overflow-hidden -mx-4 divide-y divide-gray-200 mb-6">
                 {% assign date = currentdate %}
             {% endif %}
             <li>
-                <a href="{{ post.url }}" class="block py-4 px-4 hover:bg-gray-50">
+                <a href="{{ post.url }}" class="block py-4 px-4 hover:bg-gray-50 border-none">
                     <div class="text-sm text-gray-300 font-semibold">
                         {{ post.content | number_of_words | divided_by: 180.0 | ceil }} min
                     </div>

@@ -10,9 +10,7 @@ last_modified: 2020-08-06 19:48:00 +0200
 Time Tracking has become quite a large aspect of my life. In my current setup I track all the time I spend on university and work (more details below). I do this for several reasons:
 
 1. **To get a realistic view of what I'm working on, and how much I'm actually doing** -- My brain (and perhaps yours too) is pretty good at lying to yourself about the amount of work you got done today, this week or this month. Tracking the _productive_ time allows me to get a good grasp of these things.
-
 2. **To reflect** -- Next to a realistic view of what I've done I use this data to reflect on projects I've started, track habits (like reading) and make future decisions. 
-
 3. **A bit of focus and motivation** -- When starting one of my timers I use this process as a sort of reset for my brain. When the timer starts I should be doing the work.
 
 
