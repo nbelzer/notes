@@ -6,10 +6,12 @@ defaults:
       path: ""
     values:
        layout: "default"
-  - scope:
-      path: "topics"
-    values:
-      layout: "topic"
+
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
+    sort_by: last_modified
 
 highlighter: rouge
 

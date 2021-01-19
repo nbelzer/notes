@@ -4,7 +4,7 @@ subtitle: How to apply preset styles in SwiftUI using Viewbuilders.
 layout: topic
 author: nbelzer
 tags: SwiftUI
-last_modified: 2020-09-05 16:38:00 +0200
+last_modified: 2020-09-05
 ---
 
 Using the ability to extend the `View` class in Swift we can add custom styles to our components. As an example this allows you to create different levels of shadow:

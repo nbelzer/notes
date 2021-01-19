@@ -4,7 +4,7 @@ title: Time Tracking
 subtitle: Explaining my time tracking setup.
 author: nbelzer
 tags: []
-last_modified: 2020-08-06 19:48:00 +0200
+last_modified: 2020-08-06
 ---
 
 Time Tracking has become quite a large aspect of my life. In my current setup I track all the time I spend on university and work (more details below). I do this for several reasons:

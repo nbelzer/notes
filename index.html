@@ -9,33 +9,22 @@ layout: default
 </div>
 
 <div class="mt-6">
-    <!-- Based on https://stackoverflow.com/a/20777475/7868972 -->
-    {% for post in site.posts %}
-        {% assign currentdate = post.date | date: "%Y" %}
-            {% if currentdate != date %}
-                {% unless forloop.first %}</ul>{% endunless %}
-                <section class="flex flex-row items-center pb-4">
-                    <h2 id="y{{post.date | date: "%Y"}}" class="my-0">
-                        {{ currentdate }}
-                    </h2>
-                </section>
-                <ul class="list-none border border-solid border-gray-200 rounded-md overflow-hidden -mx-4 divide-y divide-gray-200 mb-6">
-                {% assign date = currentdate %}
-            {% endif %}
-            <li>
-                <a href="{{ post.url }}" class="block py-4 px-4 hover:bg-gray-50 border-none">
-                    <div class="text-sm text-gray-300 font-semibold">
-                        {{ post.content | number_of_words | divided_by: 180.0 | ceil }} min
-                    </div>
-                    <div class="my-1 text-lg font-semibold text-black-700">
-                        {{ post.title }}
-                    </div>
-                    <div class="text-gray-500">
-                        {{ post.subtitle}}
-                    </div>
-                </a>
-            </li>
-        {% if forloop.last %}</ul>{% endif %}
+    <ul class="list-none border border-solid border-gray-200 rounded-md overflow-hidden -mx-4 divide-y divide-gray-200 mb-6">
+    {% for post in site.pages reversed %}
+        <li>
+            <a href="{{ post.url }}" class="block py-4 px-4 hover:bg-gray-50 border-none">
+                <div class="text-sm text-gray-300 font-semibold">
+                    {{ post.content | number_of_words | divided_by: 180.0 | ceil }} min
+                </div>
+                <div class="my-1 text-lg font-semibold text-black-700">
+                    {{ post.title }}
+                </div>
+                <div class="text-gray-500">
+                    {{ post.subtitle}}
+                </div>
+            </a>
+        </li>
     {% endfor %}
+    </ul>
 </div>
 

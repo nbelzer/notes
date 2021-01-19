@@ -4,7 +4,7 @@ title: "Using Git"
 subtitle: My experiences with Git and some tips & tricks.
 author: nbelzer
 tags: []
-last_modified: 2020-08-04 20:27:00 +0200
+last_modified: 2020-08-04
 ---
 
 The ability to use version control properly is a skill every software developer needs. Personally I have only used [Git](https://git-scm.com). 

@@ -4,7 +4,7 @@ subtitle: How I built this website.
 layout: topic
 author: nbelzer
 tags: []
-last_modified: 2020-09-05 14:59:00 +0200
+last_modified: 2020-09-05
 ---
 
 For a while now I have looked up to personal knowledge repositories like the one from [Nikita Voloboev](https://wiki.nikitavoloboev.xyz). Using [Notion](https://www.notion.so) I've created my own personal repository of knowledge spanning many aspects of my life: from my work with different software libraries or programming languages to strategies for games and general thoughts about life.
