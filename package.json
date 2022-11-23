@@ -9,7 +9,7 @@
     "browser-sync": "^2.27.10",
     "cross-env": "^7.0.0",
     "cross-spawn": "^7.0.3",
-    "cssnano": "4.1.10",
+    "cssnano": "5.1.14",
     "gulp": "4.0.2",
     "gulp-postcss": "^9.0.0",
     "postcss-import": "12.0.1",
